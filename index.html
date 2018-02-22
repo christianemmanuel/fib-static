@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>First Internet Bank</title>
+
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="images/png" href="images/favicon.jpg"> -->
+
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Typekit Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/iyy1hsb.css">
+</head>
+<body>
+
+    <!-- MODAL CONTENT 1-->
+    <div id="login_modal" class="show_modal">
+
+        <div class="modal-body">
+            <div class="modal-content">
+                
+                <div class="flexbox_container_auto login_modal_container">
+                    <div class="login_modal_content">
+                        <h3 class="heading_login">Personal Online Banking Login</h3>
+                        <div class="login_modal_form">
+                            <div class="form-group fib-form-group">
+                                <form action="?">
+                                    <div class="field">
+                                        <label for="usernamemodal">Username</label>
+                                        <input type="text" placeholder="User ID" id="usernamemodal">
+                                    </div>
+
+                                    <div class="field">
+                                        <label for="passswordmodal">Password</label>
+                                        <input type="password" placeholder="Password" id="passswordmodal">
+                                    </div>
+
+                                    <div class="checkbox_label">
+                                        <input type="checkbox" id="rememberMemodal">
+                                        <label for="rememberMemodal">Remember me</label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-green"><i class="fib-icon-lock"></i>Login</button>
+                                </form>
+                            </div>
+                            <div class="login_cta_link">
+                                <ul>
+                                    <li><a href="#">Forgot Your Password?</a></li>
+                                    <li><a href="#">New User Sign Up</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick_link_login">
+                        <ul>
+                            <li><a href="#">Business Online Banking Login</a></li>
+                            <li><a href="#">Mortgage Loan Application</a></li>
+                            <li><a href="#">CRE Statements</a></li>
+                            <li><a href="#">Share Secure</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="close-modal">CLOSE</button>
+        </div>
+
+    </div>
+
+    <!-- Main Banner -->
+    <header class="main-header">
+        <div class="top-menu">
+            <div class="top-menu-link">
+                <ul>
+                    <li><a href="#" class="active">Personal</a></li>
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="top-menu-search">
+                <a href="#login_modal" class="btn_modal_trigger login-link">
+                    <i class="fib-icon-lock"></i><span>LOGIN</span>
+                </a>
+
+                <div class="form-group">
+                     <i class="fib-search-icon"></i>
+                    <form action="?">
+                        <input type="text" placeholder="SEARCH">
+                    </form>
+                </div>
+
+                <a href="tel:1-888-873-3424" class="login-link call-to-now">
+                    <i class="fib-icon-phone"></i><span>CALL NOW</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <div class="main-nav-wrapper">
+            <div class="nav-left">
+                <a href="index.php" class="logo"><img src="images/logo.png" alt="logo"></a>
+                <nav class="main-nav">
+                    <a href="index.php" class="nav-mobile-header active">PERSONAL</a>
+                    <div class="main-nav-list">
+                        <ul>
+                            <li class="dropdown"><a href="javascript:void(0);">Bank</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="nav-icon nav-icon-savings">Savings Accounts</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-accounts-for-kid">Accounts for Kids</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-checking-debit">Checking &amp; Debit</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-cds">CDs</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-iras">IRAs</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-health-savings">Health Savings Accounts</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="javascript:void(0);">Borrow</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="nav-icon nav-icon-home-equity">Home Equity Loans</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-credit-card">Credit Cards</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-auto-loans">Auto Loans &amp; Recreational Vehicle Financing</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-personal-loans">Personal Loans</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-student-loans">Student Loans</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="javascript:void(0);">Mortgage</a>
+                                <ul class="dropdown-menu"> 
+                                    <li><a href="#" class="nav-icon nav-icon-buy-home">Buy a Home</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-refinance">Refinance</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-build-home">Build a Home</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-loan-option">Loan Options</a></li>
+                                    <li><a href="#" class="nav-icon nav-icon-loan-officers">Loan Officers</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="commercial.php" class="nav-mobile-header">COMMERCIAL</a>
+                    <a href="about-us.php" class="nav-mobile-header">ABOUT US</a>
+                </nav>
+            </div>
+
+            <div class="contact-nav hide_mobile">
+                <a>Contact</a>
+                <h5 href="#">CALL NOW <span>1-888-873-3424</span></h5>
+            </div>
+
+            <div class="toggle-nav">
+                <span class="toggle-line1"></span>
+                <span class="toggle-line2"></span>
+                <span class="toggle-line3"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-banner">        
+        <div class="container">
+            <div class="flexbox_container_auto">
+                <div class="main-banner-details">
+                    <div class="main-banner-intro">
+                        <h1>Bank on your own terms</h1>
+                        <p>You’re ready to stake your claim, meet your goals, build your future. With First Internet Bank, you get the services and support you need — anywhere and anytime — to guide you to success. Get ready to bank on your terms.</p>
+                        <div class="cta-banner">
+                            <a href="#" class="btn btn-green">Personal Banking</a>
+                            <a href="javascript:void(0)" class="btn btn-green" id="adasdas">Commercial Banking</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loginTab-wrapper">
+                    <div class="login-container">
+                        <h5 class="heading_login"><span>log in to your account</span> <a class="closeLogin_wrapper"></a></h5>
+                        
+                        <div class="tab_login_wrapper">
+                            <div class="tab_menu_login">
+                                <ul>
+                                    <li><a href="#personal" class="active">Personal</a></li>
+                                    <li><a href="#business">Business</a></li>
+                                    <li><a href="#other">Other</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="tab_content_body">
+
+                                <!-- TAB 1 -->
+                                <div id="personal" class="login_tab_content">                            
+                                    <div class="tab_main_content">
+                                        <div class="form-group fib-form-group">
+                                            <form action="?">
+                                                <div class="field">
+                                                    <label for="username">Username</label>
+                                                    <input type="text" placeholder="User ID" id="username">
+                                                </div>
+
+                                                <div class="field">
+                                                    <label for="passsword">Password</label>
+                                                    <input type="password" placeholder="Password" id="passsword">
+                                                </div>
+
+                                                <div class="checkbox_label">
+                                                    <input type="checkbox" id="rememberMe">
+                                                    <label for="rememberMe">Remember me</label>
+                                                </div>
+
+                                                <button type="submit" class="btn btn-green"><i class="fib-icon-lock"></i>Login</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="login_cta_link">
+                                        <ul>
+                                            <li><a href="#">Forgot Your Password?</a></li>
+                                            <li><a href="#">New User Sign Up</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="login_cta_infoWrapper">
+                                        <div class="login_cta_info">
+                                            <h4>3.106 <sub>%  APR</sub></h4>
+                                            <span>15 Year Fixed Mortgage Rate</span>
+                                            <ul>
+                                                <li><a href="#">Learn More</a></li>
+                                                <li><a href="#">View Terms</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="login_cta_info">
+                                            <h4>1.11 <sub>%  APY</sub></h4>
+                                            <span>Money Market Savings Account</span>
+                                            <ul>
+                                                <li><a href="#">Learn More</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- TAB 2 -->
+                                <div id="business" class="login_tab_content">
+                                    <div class="tab_main_content">
+                                        <div class="form-group fib-form-group">
+                                            <form action="?">
+                                                <div class="field">
+                                                    <label for="username1">Username</label>
+                                                    <input type="text" placeholder="User ID" id="username1">
+                                                </div>
+
+                                                <div class="field">
+                                                    <label for="passsword1">Password</label>
+                                                    <input type="password" placeholder="Password" id="passsword1">
+                                                </div>
+
+                                                <div class="checkbox_label">
+                                                    <input type="checkbox" id="rememberMe1">
+                                                    <label for="rememberMe1">Remember me</label>
+                                                </div>
+
+                                                <button type="submit" class="btn btn-green"><i class="fib-icon-lock"></i>Login</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="login_cta_link">
+                                        <ul>
+                                            <li><a href="#">Forgot Your Password?</a></li>
+                                            <li><a href="#">New User Sign Up</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="login_cta_infoWrapper">
+                                        <div class="login_cta_info">
+                                            <h4>3.106 <sub>%  APR</sub></h4>
+                                            <span>15 Year Fixed Mortgage Rate</span>
+                                            <ul>
+                                                <li><a href="#">Learn More</a></li>
+                                                <li><a href="#">View Terms</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="login_cta_info">
+                                            <h4>1.11 <sub>%  APY</sub></h4>
+                                            <span>Money Market Savings Account</span>
+                                            <ul>
+                                                <li><a href="#">Learn More</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TAB 3 -->
+                                <div id="other" class="login_tab_content">                            
+                                    <div class="tab_main_content">
+                                        <div class="form-group fib-form-group">
+                                            <form action="?">
+                                                <div class="field">
+                                                    <label for="username2">Username</label>
+                                                    <input type="text" placeholder="User ID" id="username2">
+                                                </div>
+
+                                                <div class="field">
+                                                    <label for="passsword2">Password</label>
+                                                    <input type="password" placeholder="Password" id="passsword2">
+                                                </div>
+
+                                                <div class="checkbox_label">
+                                                    <input type="checkbox" id="rememberMe2">
+                                                    <label for="rememberMe2">Remember me</label>
+                                                </div>
+
+                                                <button type="submit" class="btn btn-green"><i class="fib-icon-lock"></i>Login</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="login_cta_link">
+                                        <ul>
+                                            <li><a href="#">Forgot Your Password?</a></li>
+                                            <li><a href="#">New User Sign Up</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="login_cta_infoWrapper">
+                                        <div class="login_cta_info">
+                                            <h4>3.106 <sub>%  APR</sub></h4>
+                                            <span>15 Year Fixed Mortgage Rate</span>
+                                            <ul>
+                                                <li><a href="#">Learn More</a></li>
+                                                <li><a href="#">View Terms</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="login_cta_info">
+                                            <h4>1.11 <sub>%  APY</sub></h4>
+                                            <span>Money Market Savings Account</span>
+                                            <ul>
+                                                <li><a href="#">Learn More</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a data-href="#scroll_down" class="go_down">Go Down</a>
+    </section>
+
+    <div class="mobile_cta_show">
+        <a href="javascript:void(0);" id="mobile_loginToAccount" class="btn btn-green">LOG IN TO YOUR ACCOUNT</a>
+        <a href="#" class="btn btn-green">Personal Banking</a>
+        <a href="#" class="btn btn-green" id="adasdas">Commercial Banking</a>
+    </div>
+    
+    <section id="scroll_down" class="compare_our_rates_section">
+        <div class="container">
+            <div class="compare_our_rates_body">
+                <div class="flexbox_container_auto">
+                    <div class="global_content">
+                        <h2>Compare our rates</h2>
+                        <p>Have some cash to stash, but still want access to your funds? As our highest yield savings option, First Internet Bank’s Money Market Savings account earns 1.11 % APY— over 7x the national average!*​​​​​​ If you have more than $250,000 in your account, you’ll earn an APY of 1.36%.</p>
+                        <small>*As of 12/6/2017, the national average for Money Market accounts is 0.14% APY, according to Bankrate.com.</small>
+                        <a href="#" class="btn btn-green">open an account</a>
+                    </div>
+                    
+                    <div id="compare_our_rates_desktop" class="flexbox_container_auto compare_our_rates_flex">
+                        <div class="deposit_percent_wrapper">
+                            <p>Deposit</p>
+                            <h2>$10,000</h2>
+                            <p>in a First Internet Bank</p>
+                            <p>Money Market Account</p>
+                            <p class="block">and earn</p>
+                            <h1>$116</h1>
+                            <p>in interest</p>
+                            <p>over 12 months</p>
+                            <div class="percentage_bar_wrapper percentage_bar_one">
+                                <div class="percentage_text">
+                                    <span class="dot_vertical"></span>
+                                    <span>Vs. Average <br> Competitor:</span><h5>$14</h5> <div class="bar_gray"></div>
+                                </div>
+                                <div class="percentage_bar">
+                                    <div class="bar_blue"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="deposit_percent_wrapper">
+                            <p>Deposit</p>
+                            <h2>$100,000</h2>
+                            <p>in a First Internet Bank</p>
+                            <p>Money Market Account</p>
+                            <p class="block">and earn</p>
+                            <h1>$1,157</h1>
+                            <p>in interest</p>
+                            <p>over 12 months</p>
+                            <div class="percentage_bar_wrapper percentage_bar_two">
+                                <div class="percentage_text">
+                                    <span class="dot_vertical"></span>
+                                    <span>Vs. Average <br> Competitor:</span><h5>$140</h5> <div class="bar_gray"></div>
+                                </div>
+                                <div class="percentage_bar">
+                                    <div class="bar_blue"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deposit_percent_wrapper deposit_percent_wrapper_last">
+                            <p>Deposit</p>
+                            <h2>$250,001</h2>
+                            <p>in a First Internet Bank</p>
+                            <p>Money Market Account</p>
+                            <p class="block">and earn</p>
+                            <h1>$3,526</h1>
+                            <p>in interest</p>
+                            <p>over 12 months</p>
+                            <div class="percentage_bar_wrapper percentage_bar_three">
+                                <div class="percentage_text">
+                                    <span class="dot_vertical"></span>
+                                    <span>Vs. Average <br> Competitor:</span><h5>$351</h5> <div class="bar_gray"></div>
+                                </div>
+                                <div class="percentage_bar">
+                                    <div class="bar_blue"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="compare_our_rates_mobile" class="flexbox_container_auto compare_our_rates_flex owl-carousel owl-theme">
+                        <div class="deposit_percent_wrapper">
+                            <p>Deposit</p>
+                            <h2>$10,000</h2>
+                            <p>in a First Internet Bank</p>
+                            <p>Money Market Account</p>
+                            <p class="block">and earn</p>
+                            <h1>$116</h1>
+                            <p>in interest</p>
+                            <p>over 12 months</p>
+                            <div class="percentage_bar_wrapper percentage_bar_one">
+                                <div class="percentage_text">
+                                    <span class="dot_vertical"></span>
+                                    <span>Vs. Average <br> Competitor:</span><h5>$14</h5> <div class="bar_gray"></div>
+                                </div>
+                                <div class="percentage_bar">
+                                    <div class="bar_blue"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="deposit_percent_wrapper">
+                            <p>Deposit</p>
+                            <h2>$100,000</h2>
+                            <p>in a First Internet Bank</p>
+                            <p>Money Market Account</p>
+                            <p class="block">and earn</p>
+                            <h1>$1,157</h1>
+                            <p>in interest</p>
+                            <p>over 12 months</p>
+                            <div class="percentage_bar_wrapper percentage_bar_two">
+                                <div class="percentage_text">
+                                    <span class="dot_vertical"></span>
+                                    <span>Vs. Average <br> Competitor:</span><h5>$140</h5> <div class="bar_gray"></div>
+                                </div>
+                                <div class="percentage_bar">
+                                    <div class="bar_blue"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deposit_percent_wrapper deposit_percent_wrapper_last">
+                            <p>Deposit</p>
+                            <h2>$250,001</h2>
+                            <p>in a First Internet Bank</p>
+                            <p>Money Market Account</p>
+                            <p class="block">and earn</p>
+                            <h1>$3,526</h1>
+                            <p>in interest</p>
+                            <p>over 12 months</p>
+                            <div class="percentage_bar_wrapper percentage_bar_three">
+                                <div class="percentage_text">
+                                    <span class="dot_vertical"></span>
+                                    <span>Vs. Average <br> Competitor:</span><h5>$351</h5> <div class="bar_gray"></div>
+                                </div>
+                                <div class="percentage_bar">
+                                    <div class="bar_blue"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="openAn_account">
+                        <a href="#" class="btn btn-green">open an account</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="first_internet_bank_section">
+        <div class="container">
+            <div class="first_internet_bank_body">
+                <div class="flexbox_container_auto">
+                    <div class="first_internet_img">
+                        <img src="images/stock-photo.jpg" alt="stock image">
+                    </div>
+
+                    <div class="first_internet_bank_detail">
+                        <div class="global_content">
+                            <h2>First Internet Bank delivers</h2>
+                            <p>We’re here with the expertise, services and commitment to help you build on your dreams, big and small.​​​​​​​</p>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <h5>Everything you need – nothing you don’t</h5>
+                                <p>It’s simple arithmetic: with no overhead burden from branches, we can give you better rates and lower fees. You do the math.</p>
+                            </li>
+
+                            <li>
+                                <h5>Convenient and comprehensive banking solutions </h5>
+                                <p>You can have it all, from checking and debit cards to Money Market Savings accounts and commercial banking and lending, all in one place for maximum convenience.</p>
+                            </li>
+
+                            <li>
+                                <h5>Branchless bank with a national reach</h5>
+                                <p>We do business and have customers in all 50 states, so we can help you manage your money from home, work, an airport terminal, soccer practice…wherever you are.</p>
+                            </li>
+
+                            <li>
+                                <h5>A banking team like no other</h5>
+                                <p>At First Internet Bank, you’ll find a remarkably diverse team unified by a singular vision: banking​ ​can ​be​ ​more.​ ​Do​ ​more. Call us to see how we deliver on that vision every day.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial_section">
+        <div class="container">
+            <div class="testimonial_body">
+                <div class="testimonial-carousel owl-carousel owl-theme">
+                    <div class="testimonial-item">
+                        <h3>Don’t just take our word for it</h3>
+                        <p>“First Internet Bank takes the time to understand our business. They’re careful listeners, which is something we appreciate. Like us, they’re in the solutions business. That’s why we love working with them.” </p>
+                        <span class="author">– Mark Riggle, co-owner at California Closets Indianapolis</span>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <h3>Don’t just take our word for it</h3>
+                        <p>“First Internet Bank takes the time to understand our business. They’re careful listeners, which is something we appreciate. Like us, they’re in the solutions business. That’s why we love working with them.” </p>
+                        <span class="author">– Mark Riggle, co-owner at California Closets Indianapolis</span>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <h3>Don’t just take our word for it</h3>
+                        <p>“First Internet Bank takes the time to understand our business. They’re careful listeners, which is something we appreciate. Like us, they’re in the solutions business. That’s why we love working with them.” </p>
+                        <span class="author">– Mark Riggle, co-owner at California Closets Indianapolis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pres_and_news_section">
+        <div class="container">
+            <div class="pres_and_news_body">
+                <div class="global_content text-center">
+                    <h2>Latest Press &amp; News</h2>
+                </div>
+                <div class="row-10">
+                    <div class="flexbox_container">
+                        <div class="flex_child flex_xs_grid_4_12">
+                            <a href="#" class="cta_news">
+                                <figure class="pres_and_news_detail">
+                                    <div class="img_holder">
+                                        <img src="images/pres-img1.jpg" alt="img 1">
+                                    </div>
+                                    <figcaption>
+                                        <p>First Internet Bank’s Craig Fortner and Justin Karvasky Honored Amirst Internet Bank’s Craig Fortner and Justin Karvasky Honored Amirst Internet Bank’s Craig Fortner and Justin Karvasky Honored Amirst Internet Bank’s Craig Fortner and Justin Karvasky Honored Among Ind</p>
+                                        <span>November 10, 2017</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="flex_child flex_xs_grid_4_12">
+                            <a href="#" class="cta_news">
+                                <figure class="pres_and_news_detail">
+                                    <div class="img_holder">
+                                        <img src="images/pres-img2.jpg" alt="img 1">
+                                    </div>
+                                    <figcaption>
+                                        <p>First Internet Bank’s Nicole Lorch Selected a 2017 Woman of Influence</p>
+                                        <span>November 2, 2017</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="flex_child flex_xs_grid_4_12">
+                            <a href="#" class="cta_news">
+                                <figure class="pres_and_news_detail">
+                                    <div class="img_holder">
+                                        <img src="images/pres-img3.jpg" alt="img 1">
+                                    </div>
+                                    <figcaption>
+                                        <p>[PODCAST] EchoChamber: Entrepreneurial Excellence with Dav</p>
+                                        <span>October 26, 2017</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="flex_child flex_xs_grid_4_12">
+                            <a href="#" class="cta_news">
+                                <figure class="pres_and_news_detail">
+                                    <div class="img_holder">
+                                        <img src="images/pres-img4.jpg" alt="img 1">
+                                    </div>
+                                    <figcaption>
+                                        <p>First Internet Bank Expands Team in Southwest Office</p>
+                                        <span>September 21, 2017</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="as-seen-in-wrapper">
+                <div class="row-10">
+                    <ul>
+                        <li class="seen_text"><h5>As seen in</h5></li>
+                        <div class="seen_logo">
+                            <li><img src="images/as-seen-in1.png" alt="as seen in img"></li>
+                            <li><img src="images/as-seen-in2.png" alt="as seen in img"></li>
+                            <li><img src="images/as-seen-in3.png" alt="as seen in img"></li>
+                            <li><img src="images/as-seen-in4.png" alt="as seen in img"></li>
+                            <li><img src="images/as-seen-in5.png" alt="as seen in img"></li>
+                        </div>
+                        <li class="seen_cta"><a href="#" class="btn btn-green">View All Press &amp; News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="want_to_talk_section">
+        <div class="container">
+            <div class="want_to_talk_body">
+                <div class="want_to_talk_detail">
+                    <h4>Want to talk?</h4>
+                    <p>Chat with one of our U.S.-based Relationship Bankers and get fast answers or help opening an account.</p>
+                </div>
+
+                <div class="want_to_talk_contact">
+                    <ul>
+                        <li><a href="mailto:bank@firstib.com"><i class="fib-icon-mail"></i>bank@firstib.com</a></li>
+                        <li><a href="tel:1-888-873-3424"><i class="fib-icon-phone"></i>1-888-873-3424</a></li>
+                        <li><a href="#" class="btn btn-green">Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main_footer_section">
+        <div class="container">
+            <div class="main_footer_body">
+                <div class="footer_logo">
+                    <img src="images/logo-white.png" alt="logo">
+                    <a href="tel:1-888-873-3424" class="footer_phone_number"><i class="fib-icon-phone"></i>1-888-873-3424</a>
+                </div>
+
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#"><i class="social-media-icon fib-icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="social-media-icon fib-icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="social-media-icon fib-icon-linked"></i></a></li>
+                        <li><a href="#"><i class="social-media-icon fib-icon-youtube"></i></a></li>
+                        <li><a href="#"><i class="social-media-icon fib-icon-instagram"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_logo_link">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Privacy &amp; Security</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Disclosures</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copyright_section">
+        <div class="container">
+            <div class="copyright_body">
+                <div class="copyright_icon_body">
+                    <ul>
+                        <li><i class="copyright-icon copyright-icon-1"></i></li>
+                        <li><i class="copyright-icon copyright-icon-2"></i></li>
+                        <li><i class="copyright-icon copyright-icon-3"></i></li>
+                    </ul>
+                </div>
+
+                <span>&copy; 2017 First Internet Bank of Indiana</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="dist/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
